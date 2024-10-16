@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Live Docs
+
+Livedocs is a web-based collaborative document editor designed to allow users to create, share, and edit documents in real-time. It offers features similar to Google Docs, where users can collaborate seamlessly by sharing documents via email, assigning viewer or editor roles, and keeping documents synchronized in real-time across all users.
+
+## Features
+
+- **Create Documents:** Easily create new documents from the dashboard.
+- **Share Documents:** Share documents with others by inviting them through their email.
+- **Access Control:** Assign roles to collaborators:
+  - **Viewer:** Can view the document but not edit.
+  - **Editor:** Can view and edit the document.
+- **Add/Remove Collaborators:** Manage who can access your documents by adding or removing collaborators anytime.
+- **Real-time Collaboration:** Any changes made by users with editor access will be reflected in real-time across all devices.
+- **Document Security:** Only invited users with appropriate access rights can view or edit the documents.
+
+## How It Works
+
+1. **Sign Up/Login:**
+   - Users can sign up or log in using their email and password.
+  
+2. **Create a New Document:**
+   - Once logged in, click the "New Document" button on the dashboard to create a fresh document.
+
+3. **Share the Document:**
+   - After creating the document, invite collaborators by entering their email addresses and assigning them either "Viewer" or "Editor" access.
+
+4. **Real-Time Editing:**
+   - Any changes made by an editor will be visible to all collaborators instantly. Viewers will see the latest version without being able to make changes.
+
+5. **Manage Collaborators:**
+   - You can add or remove collaborators at any time. Adjust permissions as needed for each user.
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone https://github.com/your-username/livedocs.git
 
-## Learn More
+2. Navigate to the project folder:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   cd livedocs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Install the dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
 
-## Deploy on Vercel
+4. Start the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app will be available at http://localhost:3000
+
+## Technologies Used
+
+- **Frontend:**
+  - React
+  - Next
+- **Backend:**
+  - TBD (e.g. Node, Express, etc.)
+- **Authentication:** TBD (e.g. JWT, Clerk, etc.)
+- **Hosting:** TBD (e.g., AWS, Heroku, etc.)
