@@ -57,7 +57,7 @@ Livedocs is a web-based collaborative document editor designed to allow users to
 4. Start the development server:
 
    ```bash
-   npm start
+   npm run start
 
 The app will be available at http://localhost:3000
 
