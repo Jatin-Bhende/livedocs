@@ -12,8 +12,8 @@ const UserTypeSelector = ({
   onClickHandler,
 }: UserTypeSelectorParams) => {
   const accessChangeHandler = (type: UserType) => {
-      setUserType(type);
-			onClickHandler && onClickHandler(type);
+    setUserType(type);
+    onClickHandler && onClickHandler(type);
   }
   return (
     <Select value={userType} onValueChange={(type: UserType) => accessChangeHandler(type)}>

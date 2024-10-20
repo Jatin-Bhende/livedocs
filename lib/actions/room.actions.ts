@@ -6,7 +6,6 @@ import { revalidatePath } from "next/cache";
 import { getAccessType, parseStringify } from "../utils";
 import type { RoomData } from "@liveblocks/node";
 import { redirect } from "next/navigation";
-import { title } from "process";
 
 export const createDocument = async ({
   userId,

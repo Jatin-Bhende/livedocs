@@ -24,7 +24,9 @@ const Provider = ({ children }: { children: React.ReactNode}) => {
           text
         });
 
-        return roomUsers!;
+        if(!roomUsers) return [];
+
+        return roomUsers;
       }}
     >
         <ClientSideSuspense fallback={<Loader />}>
