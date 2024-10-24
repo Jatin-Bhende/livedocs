@@ -54,7 +54,20 @@ Livedocs is a web-based collaborative document editor designed to allow users to
    ```bash
    npm install
 
-4. Start the development server:
+4. Add .env.local file at root level and add following env variables:
+
+   ```bash
+   # clerk
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+   CLERK_SECRET_KEY=your_clerk_secret_key
+
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+   # liveblocks
+   LIVEBLOCKS_SECRET_KEY=your_liveblocks_secret_key
+
+5. Start the development server:
 
    ```bash
    npm run start
@@ -63,10 +76,10 @@ The app will be available at http://localhost:3000
 
 ## Technologies Used
 
-- **Frontend:**
-  - React
-  - Next
-- **Backend:**
-  - TBD (e.g. Node, Express, etc.)
-- **Authentication:** TBD (e.g. JWT, Clerk, etc.)
-- **Hosting:** TBD (e.g., AWS, Heroku, etc.)
+- React
+- Next.js
+- Shadcn (UI Components)
+- Tailwind (Styling)
+- Liveblocks (Realtime collaboration)
+- Clerk (Authentication)
+- Vercel (Hosting)
