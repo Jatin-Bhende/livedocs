@@ -42,7 +42,7 @@ Livedocs is a web-based collaborative document editor designed to allow users to
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/livedocs.git
+   git clone https://github.com/Jatin-Bhende/livedocs.git
 
 2. Navigate to the project folder:
 
